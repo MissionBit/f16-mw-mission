@@ -1,0 +1,36 @@
+<!doctype html>
+<html>
+    <head>
+        <title>Mission Bit Intro to Web Programming</title>
+    </head>
+    <body>
+        <h1>Mission Bit Intro to Web Programming</h1>
+        <h2>Fall 2016</h2>
+        <h3>Mission High M/W 4-6pm</h3>
+
+        <p>
+            Here's a gif for u
+            <div id="img_container"></div>
+        </p>
+
+        <script type="text/javascript">
+            var imgs = [
+                "http://media.giphy.com/media/TsxMkIKHpvFaU/giphy.gif",
+                "https://media.giphy.com/media/s0z685OFhWyuk/giphy.gif",
+                "https://media.giphy.com/media/4nRiHFFTzmJZC/giphy.gif",
+                "https://media.giphy.com/media/Fbyam9ZAJ3J1m/giphy.gif",
+                "https://media.giphy.com/media/tHufwMDTUi20E/giphy.gif",
+                "https://media.giphy.com/media/ZIqbJ5Tbm6N0I/giphy.gif",
+                "https://media.giphy.com/media/qKltgF7Aw515K/giphy.gif",
+                "https://media.giphy.com/media/sRWf3Oa9vW6Xu/giphy.gif"
+            ];
+
+            var url = imgs[Math.floor(Math.random() * imgs.length)];
+            var container = document.getElementById("img_container");
+            var img = document.createElement("img");
+            img.src = url;
+            img.width = 512;
+            container.appendChild(img);
+        </script>
+    </body>
+</html>
